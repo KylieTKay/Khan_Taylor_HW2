@@ -23,16 +23,37 @@
     margin: 0 auto;
 }
 
-.box-colour {
-    background-color: black;
-    color: #fff;
+
+
+.box-colourIcon {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
+h2, h3 {
+    background-color: rgba(83, 83, 83, 0.548);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 55px;
+    margin-bottom: 35px;
+}
+
 .box-colour2 {
-    background-color: #a7a7a7;
+    background-color: #bdbdbd;
     text-align: center;
 }
+
+.box-colourBody {
+    background-color: rgba(192, 192, 192, 0.559);
+    text-align: center;
+}
+
+.box-colour4 {
+    background-color: #939393;
+    text-align: center;
+}
+
 
 /* 2. ---Grid--- */
 
@@ -50,71 +71,160 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 
 /* 3. ---Header--- */
+#main-header {
+    background-color: rgba(255, 255, 255, 0.751);
+    position: sticky;
+    top: 0; left: 0;
+    width: 1200px;
+}
 
 #header-logo {
-    width: 270px;
-    height: 100px;
-    grid-column: 1/4;
+    width: 200px;
+    height: 95px;
+    grid-column: 1/3;
+    margin-top: 25px;
 }
 
 #header-nav {
     height: 70px;
-    grid-column: 7/-1;
-    margin-top: 15px;
+    grid-column: 12/12;
+    margin: 25px 0 ;
 }
 
 /* 4. ---Main Hero Image--- */
-#hero {
-    margin-top: 70px;
-}
+/* #hero {
+    margin-bottom: 110px;
+} */
 .hero-image {
     grid-column: 1/-1;
-    width: 1170px;
-    height: 400px;
+    margin: 0 -15px;
     grid-row: 1/3;
 }
 
-#buy-now {
-    margin-top: 20px;
-    width: 255px;
-    height: 100px;
-    grid-column: 10/-1;
+#mainHeroSlogan {
     grid-row: 1/2;
+    grid-column: 7/12;
+    /* font-size: 14px; */
+    /* align-self: end; */
+    margin-top: 85px;
+    /* text-align: left; */
+    /* color: #3B3B3B; */
 }
 
-#tag-line {
-    height: 100px;
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    margin-bottom: 30px;
-    align-self: end;
+#mainHeroTagline {
+    grid-row: 1/2;
+    grid-column: 8/11;
+    /* font-size: 14px; */
+    /* align-self: end; */
+    margin-top: 175px;
+    /* text-align: left; */
+    /* color: #3B3B3B; */
 }
 
+#background {
+    background: url('../images/Artboard\ 4.png');
+}
+
+#quote {
+    margin-top: 110px;
+    grid-column: 2/6;
+}
+
+#quotee {
+    grid-column: 2/8;
+}
+
+#commercial {
+    grid-column: 2/12;
+    margin: 100px 0 35px 0;
+}
 
 /* 5. ---Features--- */
 
 #features-con {
-    margin-top: 100px;
+    background: rgb(255, 255, 255, 75%);
+    /* display: inlineblock; */
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.feature {
-    width: 370px;
-    height: 300px;
-    grid-column: span 4;
+#feature-img {
+    grid-column: 2/6;
+    /* display: flex;
+    float: left; */
 }
 
+#feature-text {
+    display: inline;
+    grid-column: 6/12;
+    padding-left: 70px;
+
+}
+
+#feature-text h2 { 
+    margin-top: 0;
+}
+
+#feature-text h3 { 
+    margin-left: 70px;
+}
+
+#feature-text p {
+    height: 155px;
+    margin-left: 70px;
+    margin-top: 35px;
+}
+ 
+#flavours {
+    display: grid;
+    grid-template-rows: repeat(2, 600px);
+}
+
+.flavour1 {
+    grid-column: span 6;
+    grid-row: span 1;
+    height: fit-content;
+}
+
+.flavour2 {
+    grid-column: span 6;
+    height: fit-content;
+}
+
+.flavour1 h3, .flavour2 h3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    bottom: 80px;
+}
+
+#packaging img {
+    margin-left: -15px;
+    float:left
+}
+
+#packaging-text  {
+    margin-top: 30px;
+    grid-column: 5/12;
+}
+#packaging-text h2 {
+    margin-left: 130px;
+}
+
+#packaging-text p {
+    margin-left: 200px;
+    height: 420px;
+}
 
 /* 6. ---Footer--- */
 
-#footer-con-full {
-    height: 100px;
-    margin-top: 150px;
-}
 
-#footer-nav {
+
+/* #footer-nav {
     width: 640px;
     height: 70px;
     margin-top: 15px;
     grid-column: 1/8;
     margin-left: 45px;
-}
+} */
